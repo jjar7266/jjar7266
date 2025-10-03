@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter import filedialog, ttk, messagebox
 import cv2
 from crop_tool import CropTool
+from PIL import Image, ImageTk
 
 class CropApp:
     def __init__(self, root):
@@ -112,9 +113,39 @@ class CropApp:
         self.height_slider.set(0)
         self.mode_dropdown.current(0)
         self.status.config(text="🔄 Cropping complete. You can start a new session or close the app.")
-        
 
-if __name__ == "__main__":
+
+def show_splash(on_close):
+    splash_root = tk.Tk()
+    splash_root.withdraw()
+
+    splash = tk.Toplevel(splash_root)
+    splash.overrideredirect(True)
+    splash.geometry("300x200+500+300")
+    splash.configure(bg="white")
+
+    try:
+        img = Image.open("scissors_icon.ico")
+        img = img.resize((64, 64))
+        photo = ImageTk.PhotoImage(img)
+        icon_label = tk.Label(splash, image=photo, bg="white")
+        icon_label.image = photo
+        icon_label.pack(pady=10)
+    except Exception:
+        icon_label = tk.Label(splash, text="✂️", font=("Helvetica", 32), bg="white")
+        icon_label.pack(pady=10)
+
+    text_label = tk.Label(splash, text="AutoCrop is loading…", font=("Helvetica", 14), bg="white")
+    text_label.pack()
+
+    splash.after(2000, lambda: (splash.destroy(), splash_root.destroy(), on_close()))
+    splash.mainloop()
+
+def launch_gui():
     root = tk.Tk()
     app = CropApp(root)
     root.mainloop()
+
+if __name__ == "__main__":
+    show_splash(launch_gui)
+
