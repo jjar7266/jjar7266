@@ -1,11 +1,6 @@
-*.exe linguist-generated=true
-*.ico linguist-generated=true
-*.dll linguist-generated=true
-*.pyd linguist-generated=true
-*.spec linguist-generated=true
-
-docs/** linguist-documentation=true
-README.md linguist-documentation=true
-LICENSE linguist-documentation=true
-
 *.py linguist-language=Python
+*.txt linguist-detectable=false
+*.md linguist-detectable=false
+*.ico linguist-detectable=false
+*.png linguist-detectable=false
+*.jpg linguist-detectable=false
