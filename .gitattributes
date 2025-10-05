@@ -1,0 +1,11 @@
+*.exe linguist-generated=true
+*.ico linguist-generated=true
+*.dll linguist-generated=true
+*.pyd linguist-generated=true
+*.spec linguist-generated=true
+
+docs/** linguist-documentation=true
+README.md linguist-documentation=true
+LICENSE linguist-documentation=true
+
+*.py linguist-language=Python
