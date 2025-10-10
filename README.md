@@ -53,6 +53,8 @@ GitHub: [@jjar7266](https://github.com/jjar7266)
 
 [![Sponsor](https://img.shields.io/badge/Sponsor-❤️-red)](https://github.com/sponsors/jjar7266)
 
+buymeacoffee.com/jjar7266
+
 ## 📄 License
 
 This project is licensed under the MIT License — see the `LICENSE` file for details.
