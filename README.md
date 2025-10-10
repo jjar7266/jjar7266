@@ -51,7 +51,7 @@ None. The EXE is fully self-contained and runs on Windows.
 Created by **Joe Ruiz**  
 GitHub: [@jjar7266](https://github.com/jjar7266)
 
----
+[![Sponsor](https://img.shields.io/badge/Sponsor-❤️-red)](https://github.com/sponsors/jjar7266)
 
 ## 📄 License
 
