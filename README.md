@@ -53,7 +53,7 @@ GitHub: [@jjar7266](https://github.com/jjar7266)
 
 [![Sponsor](https://img.shields.io/badge/Sponsor-❤️-red)](https://github.com/sponsors/jjar7266)
 
-buymeacoffee.com/jjar7266
+buy_me_a_coffee: jjar7266
 
 ## 📄 License
 
